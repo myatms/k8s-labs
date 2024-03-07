@@ -1,0 +1,15 @@
+kube apiVersion: v1
+kind: Service
+metadata:
+  name: myapp
+spec:
+  selector:
+    app: myapp
+  type: NodePort
+  ports:
+  - name: http
+    targetPort: 80
+    port: 80
+    nodePort: 31234
+    # If you set the `spec.type` field to `NodePort` and you want a specific port number,
+# you can specify a value in the `spec.ports[*].nodePort` field.
