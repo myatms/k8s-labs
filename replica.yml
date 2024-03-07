@@ -1,9 +1,9 @@
 apiVersion: apps/v1
 kind: ReplicaSet
 metadata:
-  name: MYAPP
+  name: myapp-rp
   labels:
-    app: MYAPP
+    app: myapp-rp
 spec:
   # modify replicas according to your case
   replicas: 3
