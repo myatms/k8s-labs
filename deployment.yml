@@ -11,13 +11,13 @@ spec:
   replicas: 2
   template:
     metadata:
-  name: myapp
-  labels:
-    app: myapp
-  spec:
-    containers:
-    - name: myapp
-      image: nginx
-      ports:
-      - containerPort: 80
+      name: myapp
+      labels:
+        app: myapp
+    spec:
+      containers:
+      - name: myapp
+        image: nginx
+        ports:
+        - containerPort: 80
 
